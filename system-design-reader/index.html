@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>System Design Library</title>
+<link rel="stylesheet" href="styles.css">
+<script defer src="manifest.js"></script><script defer src="app.js"></script>
+</head>
+<body>
+<aside id="sidebar">
+<a class="brand" href="#chapter-0"><span class="brand-icon">SD</span><span>System Design<span class="brand-sub">THE COMPLETE LIBRARY</span></span></a>
+<label for="search">Search the library</label>
+<input id="search" type="search" placeholder="Chapters, concepts, keywords…" autocomplete="off">
+<div class="library-meta"><span id="results">31 chapters</span><span id="progress">0 read</span></div>
+<nav id="chapters" aria-label="Chapters"></nav>
+<footer>ByteByteGo · System Design Interview<br><span>Your offline reading library</span></footer>
+</aside>
+<div class="workspace">
+<header class="toolbar"><button id="menu" aria-controls="sidebar" aria-expanded="false">☰ Chapters</button><span id="breadcrumb">SYSTEM DESIGN INTERVIEW</span><button id="theme" aria-label="Switch color theme">Dark theme</button></header>
+<main id="main" tabindex="-1">
+<div class="chapter-meta"><span id="chapter-number"></span><span id="reading-time"></span></div>
+<div id="content" aria-live="polite">Loading your library…</div>
+<div class="chapter-actions"><button id="complete">Mark as read</button><span id="save-status" role="status"></span></div>
+<nav class="pagination" aria-label="Chapter navigation"><button id="previous">← Previous</button><button id="next">Next chapter →</button></nav>
+</main>
+</div>
+<aside class="outline"><span class="outline-title">IN THIS CHAPTER</span><nav id="sections" aria-label="Chapter sections"></nav><a href="#main" class="back-top">↑ Back to top</a></aside>
+</body>
+</html>
